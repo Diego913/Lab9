@@ -1,0 +1,21 @@
+html
+{
+    background-color: #054690;
+}
+
+.form-wrapper {
+    text-align: center;
+    background-color: black;
+    background-size: 100%;
+    color: rgb(21, 201, 246);
+}
+.reciept {
+    margin: 0 auto;
+    border: 5px solid black;
+}
+#receipt th {
+    background-color: #520ab1;
+}
+#receipt td {
+    background-color: #f838df;
+}

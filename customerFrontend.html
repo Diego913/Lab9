@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <form class="form-wrapper" action="customerBackend.php" method="post">
+            <label for="username">Username: </label><BR>
+            <input type="email" name="username" id="username" required><BR><BR>
+
+            <label for="password">Password: </label><BR>
+            <input type="password" name="password" id="password" minlength="8" required><BR><BR>
+
+            <label for="ps5">PS5 ($500.00): </label> <BR>
+            <input type="number" name="ps5" id="ps5" value="0" required><BR><BR>
+
+            <label for="xbox">Xbox Series X ($490.00): </label><BR>
+            <input type="number" name="xbox" id="xbox" value="0" required><BR><BR>
+
+            <label for="switch">Nintendo Switch ($350.00): </label><BR>
+            <input type="number" name="switch" id="switch" value="0" required><BR><BR>
+
+            <label for="shipping">Shipping:</label><BR><BR>
+            <input type="radio" name="shipping" id="shipping" value="Free"     required>             Free 5 day<BR>
+            <input type="radio" name="shipping" id="shipping" value="Standard" required>      $70.00 for 2 days<BR>
+            <input type="radio" name="shipping" id="shipping" value="Extreme"  required> $200.00 for 30 minutes<BR>
+            <input type="reset">
+            <input type="submit" onclick="checkForm()">
+        </form>
+        <script src="formChecker.js"></script>
+    </body>    
+</html>
